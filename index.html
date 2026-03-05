@@ -6,9 +6,9 @@
     <title>Faizeen Ejaz – Learn, Earn & Shine ✨ | Only for Women Community</title>
 
     <!-- SEO -->
-    <meta name="description" content="Join 10K+ women learning in-demand skills and earning ₹50K-₹1L monthly with Faizeen Ejaz. Start your journey today!">
+    <meta name="description" content="Join 10K+ women learning in-demand skills and earning ₹50K-₹1L monthly. Start today!">
     <meta property="og:image" content="https://i.ibb.co/Jw5CmkBW/Whats-App-Image-2026-03-04-at-2-40-28-PM.jpg">
-    <meta name="theme-color" content="#E91E63">
+    <meta name="theme-color" content="#4F7C82">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,31 +27,29 @@
         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
         t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
         (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init','671318732739852'); 
-        fbq('track','PageView');
+        fbq('init','671318732739852'); fbq('track','PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=671318732739852&ev=PageView&noscript=1"/></noscript>
 
     <style>
         :root {
-            --lightest: #FCE4EC;
-            --light:    #F48FB1;
-            --primary:  #C2185B;
-            --darkest:  #880E4F;
+            --lightest: #B8E3E9;
+            --light:    #93B1B5;
+            --primary:  #4F7C82;
+            --darkest:  #0B2E33;
             --white:    #FFFFFF;
-            --shadow: 0 6px 20px rgba(194,24,89,.15);
-            --shadow-hover: 0 10px 30px rgba(194,24,89,.25);
-            --glow: 0 0 25px rgba(244,143,177,.5);
-            --glow-intense: 0 0 40px rgba(244,143,177,.7);
+            --shadow: 0 6px 20px rgba(79,124,130,.15);
+            --shadow-hover: 0 10px 30px rgba(79,124,130,.25);
+            --glow: 0 0 25px rgba(147,177,181,.5);
+            --glow-intense: 0 0 40px rgba(147,177,181,.7);
             --wa-green: #25D366;
             --wa-dark:  #128C7E;
-            --accent:   #E91E63;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #FFF5F7 0%, #FCE4EC 100%);
+            background: var(--lightest);
             color: var(--darkest);
             line-height: 1.6;
             overflow-x: hidden;
@@ -60,10 +58,11 @@
         .glow-pulse { animation: pulseGlow 2.5s infinite; }
 
         @keyframes pulseGlow {
-            0%,100%{box-shadow:0 0 20px rgba(233,30,99,.4);}
-            50%{box-shadow:0 0 40px rgba(233,30,99,.8);}
+            0%,100%{box-shadow:0 0 20px rgba(79,124,130,.4);}
+            50%{box-shadow:0 0 40px rgba(79,124,130,.8);}
         }
 
+        /* Winter Chill WhatsApp Buttons */
         .open-any{
             background:linear-gradient(135deg,var(--wa-green),var(--wa-dark)) !important;
             color:var(--white) !important;
@@ -83,24 +82,11 @@
         .hero-section{
             background: linear-gradient(135deg, var(--lightest), var(--light));
             padding:70px 0 50px;overflow:hidden;
-            position: relative;
-        }
-        .hero-section::before{
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
-            border-radius: 50%;
         }
         .badge-custom{
-            background:linear-gradient(135deg,var(--accent),var(--primary));
+            background:linear-gradient(135deg,var(--light),var(--primary));
             color:var(--white);padding:.6rem 1.5rem;border-radius:50px;font-weight:700;font-size:.875rem;
             display:inline-block;margin-bottom:1rem;box-shadow:var(--shadow);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
         .gradient-text{
             background:linear-gradient(135deg,var(--primary),var(--darkest));
@@ -111,41 +97,46 @@
         .stat-card{
             background: var(--white); padding:1.25rem;border-radius:12px;box-shadow:var(--shadow);
             text-align:center;transition:all .3s;height:100%;
-            border: 1px solid rgba(244,143,177,0.2);
         }
-        .stat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover); border-color: var(--light);}
+        .stat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
         .counter{font-size:2rem;font-weight:800;color:var(--primary);}
 
+        /* REEL-SIZE + ON-PAGE PLAY */
         .reel-track{display:flex;gap:15px;overflow-x:auto;padding-bottom:8px;}
         .reel-card{flex:0 0 320px;height:570px;border-radius:15px;overflow:hidden;box-shadow:var(--shadow);background:#000;}
         .reel-player{width:100%;height:100%;border:0;border-radius:15px;}
         
-        .step-card{background: var(--white); border-radius:15px;padding:1.5rem;box-shadow:var(--shadow);transition:all .4s;height:100%; border: 1px solid rgba(244,143,177,0.1);}
-        .step-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover); border-color: var(--light);}
-        .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--accent));color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.3rem;flex-shrink:0;}
+        .step-card{background: var(--white); border-radius:15px;padding:1.5rem;box-shadow:var(--shadow);transition:all .4s;height:100%;}
+        .step-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);}
+        .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--light));color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.3rem;flex-shrink:0;}
 
-        .accordion-item{border:none;border-radius:10px !important;margin-bottom:.75rem;box-shadow:var(--shadow); border: 1px solid rgba(244,143,177,0.1);}
+        .accordion-item{border:none;border-radius:10px !important;margin-bottom:.75rem;box-shadow:var(--shadow);}
         .accordion-button{background: var(--white); color:var(--darkest);font-weight:600;padding:1rem;}
         .accordion-button:not(.collapsed){background:linear-gradient(135deg,var(--lightest),var(--white));color:var(--primary);}
         .accordion-body{color:var(--darkest);}
 
-        .form-backdrop,.privacy-modal{position:fixed;inset:0;background:rgba(136,14,79,.8);backdrop-filter:blur(8px);z-index:9999;opacity:0;visibility:hidden;transition:all .4s;}
+        .form-backdrop,.privacy-modal{position:fixed;inset:0;background:rgba(11,46,51,.8);backdrop-filter:blur(8px);z-index:9999;opacity:0;visibility:hidden;transition:all .4s;}
         .form-backdrop.show,.privacy-modal.show{opacity:1;visibility:visible;}
-        #formContainer,#privacyContent{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);z-index:10000;max-width:500px;width:90%;max-height:85vh;opacity:0;visibility:hidden;transition:all .4s;background:var(--white);border:2px solid var(--accent);border-radius:15px;box-shadow:0 0 40px rgba(233,30,99,.3);}
+        #formContainer,#privacyContent{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);z-index:10000;max-width:500px;width:90%;max-height:85vh;opacity:0;visibility:hidden;transition:all .4s;background:var(--white);border:1px solid var(--primary);border-radius:15px;box-shadow:0 0 40px rgba(79,124,130,.3);}
         #formContainer.show,#privacyContent.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1);}
-        .form-card{box-shadow:0 0 40px rgba(233,30,99,.2);}
+        .form-card{box-shadow:0 0 40px rgba(79,124,130,.3);border:1px solid var(--primary);}
         .form-control,.form-select{background: var(--lightest); border:2px solid var(--light);color:var(--darkest);border-radius:8px;padding:.6rem .9rem;transition:all .3s;}
-        .form-control:focus,.form-select:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(233,30,99,.15);}
+        .form-control:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(79,124,130,.15);}
 
-        .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
-        .gallery-item{border-radius:15px;overflow:hidden;box-shadow:var(--shadow);transition:all .3s;aspect-ratio:3/4; position: relative;}
-        .gallery-item:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
-        .gallery-item img{width:100%;height:100%;object-fit:cover;}
-        .gallery-overlay{position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(136,14,79,0.8)); padding: 20px; color: white; opacity: 0; transition: opacity 0.3s;}
-        .gallery-item:hover .gallery-overlay{opacity: 1;}
+        /* Feedback Gallery */
+        .feedback-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: all .3s;
+        }
+        .feedback-img:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
 
-        .testimonial-card{background: var(--white); border-radius:15px; padding: 2rem; box-shadow: var(--shadow); border-left: 4px solid var(--accent); margin-bottom: 1rem;}
-        
         @media(max-width:768px){
             section{padding:40px 0;}
             .hero-section{padding:50px 0 30px;}
@@ -154,6 +145,7 @@
             .open-any{width:100%;justify-content:center;}
             h1.display-3{font-size:2rem;}
             h2.display-5{font-size:1.5rem;}
+            .feedback-img { height: 250px; }
         }
         @media(prefers-reduced-motion:reduce){
             *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
@@ -169,7 +161,7 @@
 <div class="privacy-modal" id="privacyModal">
     <div class="privacy-content" id="privacyContent">
         <button class="btn-close position-absolute top-0 end-0 m-3" id="closePrivacyBtn" aria-label="Close"></button>
-        <h2 class="h4 fw-bold mb-3" style="color:var(--accent);">Privacy Policy</h2>
+        <h2 class="h4 fw-bold mb-3" style="color:var(--primary);">Privacy Policy</h2>
         <div style="font-size:0.9rem;line-height:1.6;">
             <p><strong>Information We Collect:</strong> Name, phone, email you provide via WhatsApp or forms.</p>
             <p><strong>How We Use It:</strong> Only to share course info, support, updates. Never sold.</p>
@@ -182,7 +174,7 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero-section text-center">
-    <div class="container position-relative">
+    <div class="container">
         <div class="badge-custom glow-pulse">🚀 Women-Only Skill Seekers Community</div>
         <h1 class="display-3 fw-bold gradient-text mb-2 animate-fade-in">
             Join <span class="counter" data-target="10000" data-suffix="+">0</span> Women
@@ -192,17 +184,14 @@
 </section>
 
 <!-- ===== ABOUT / FULL IMAGE ===== -->
-<section class="py-5" style="background: linear-gradient(135deg, var(--lightest), #FFF5F7);">
+<section class="py-5" style="background: var(--lightest);">
     <div class="container">
         <div class="row g-4 align-items-center">
             <div class="col-lg-6">
-                <div class="open-any glow-pulse mb-3 d-inline-block">👇 Meet Your Mentor 👇</div>
-                <div class="rounded-3 overflow-hidden shadow-lg position-relative">
-                    <img src="https://i.ibb.co/Jw5CmkBW/Whats-App-Image-2026-03-04-at-2-40-28-PM.jpg" class="w-100" alt="Faizeen Ejaz" loading="lazy">
-                    <div class="position-absolute bottom-0 start-0 end-0 p-3" style="background: linear-gradient(transparent, rgba(136,14,79,0.9));">
-                        <p class="text-white fw-bold mb-0">Faizeen Ejaz</p>
-                        <p class="text-white-50 small mb-0">Entrepreneur & Coach</p>
-                    </div>
+                <div class="open-any glow-pulse mb-3 d-inline-block">👇 See My Journey 👇</div>
+                <!-- FULL-SIZE IMAGE (no black bars) -->
+                <div class="rounded-3 overflow-hidden shadow-lg">
+                    <img src="https://i.ibb.co/Jw5CmkBW/Whats-App-Image-2026-03-04-at-2-40-28-PM.jpg" class="w-100" alt="Faizeen Journey" loading="lazy">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -213,77 +202,68 @@
                     <p class="fs-5 d-flex align-items-center gap-2 mb-2">💻 Freelancer</p>
                     <p class="fs-5 d-flex align-items-center gap-2">🎯 Online-Skills Coach</p>
                 </div>
-                <div class="p-3 rounded-2 mb-3" style="background: var(--white); border-left: 4px solid var(--accent);">
-                    <h3 class="h5 fw-bold mb-2" style="color:var(--accent);">🎯 My Vision:</h3>
+                <div class="p-3 rounded-2 mb-3 glow-border" style="background: var(--white);">
+                    <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">🎯 My Vision:</h3>
                     <p class="fs-5 fw-semibold mb-0">"Empower Women to Empower Themselves"</p>
                 </div>
                 <button class="open-any mb-4 shine-effect">📲 Connect on WhatsApp</button>
                 <div class="row g-3">
-                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="5" data-suffix="+">0</div><p>Years Experience</p></div></div>
+                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="5" data-suffix="+">0</div><p>Years of Experience</p></div></div>
                     <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="2000" data-suffix="+">0</div><p>Women Helped</p></div></div>
-                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="100000" data-prefix="₹">0</div><p>Monthly Potential</p></div></div>
+                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="100000" data-prefix="₹">0</div><p>Monthly Earning</p></div></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== SUCCESS STORIES WITH VIDEO FIRST ===== -->
+<!-- ===== FEEDBACK VIDEOS SECTION ===== -->
 <section class="py-5" style="background: var(--white);">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-3" style="color:var(--primary);">✨ Real Success Stories</h2>
-        <p class="text-center text-muted mb-4">Watch transformation stories from our community members</p>
+        <p class="text-center text-muted mb-4">100% real feedback from women in our community</p>
         
-        <!-- Video First -->
+        <!-- First Video (YouTube Short) -->
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-8">
-                <div class="reel-card shine-effect mx-auto" style="height: 500px; max-width: 280px;">
+            <div class="col-lg-6 col-md-8">
+                <div class="reel-card shine-effect mx-auto" style="height: 500px;">
                     <iframe class="reel-player" src="https://www.youtube.com/embed/ndNjiaYjrIc?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" allowfullscreen></iframe>
                 </div>
-                <p class="text-center mt-3 text-muted">Real results from real women in our community</p>
             </div>
         </div>
 
-        <!-- Image Gallery -->
-        <div class="gallery-grid">
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/0R6zKV7f/Whats-App-Image-2026-03-05-at-1-10-02-PM.jpg" alt="Success Story 1" loading="lazy">
-                <div class="gallery-overlay">Community Member</div>
+        <!-- Feedback Images Grid -->
+        <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/0R6zKV7f/Whats-App-Image-2026-03-05-at-1-10-02-PM.jpg" class="feedback-img" alt="Feedback 1">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/LhDJnNZN/Whats-App-Image-2026-03-05-at-1-11-27-PM.jpg" alt="Success Story 2" loading="lazy">
-                <div class="gallery-overlay">Earning Proof</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/LhDJnNZN/Whats-App-Image-2026-03-05-at-1-11-27-PM.jpg" class="feedback-img" alt="Feedback 2">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/ychMgt6h/Whats-App-Image-2026-03-05-at-1-11-27-PM-2.jpg" alt="Success Story 3" loading="lazy">
-                <div class="gallery-overlay">Testimonial</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/ychMgt6h/Whats-App-Image-2026-03-05-at-1-11-27-PM-2.jpg" class="feedback-img" alt="Feedback 3">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/ZvTWVkQ/Whats-App-Image-2026-03-05-at-1-11-28-PM.jpg" alt="Success Story 4" loading="lazy">
-                <div class="gallery-overlay">Success Story</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/ZvTWVkQ/Whats-App-Image-2026-03-05-at-1-11-28-PM.jpg" class="feedback-img" alt="Feedback 4">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/7tmZr1yN/Whats-App-Image-2026-03-05-at-1-11-28-PM-1.jpg" alt="Success Story 5" loading="lazy">
-                <div class="gallery-overlay">Income Proof</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/7tmZr1yN/Whats-App-Image-2026-03-05-at-1-11-28-PM-1.jpg" class="feedback-img" alt="Feedback 5">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/9HXM3y2v/Whats-App-Image-2026-03-05-at-1-11-29-PM.jpg" alt="Success Story 6" loading="lazy">
-                <div class="gallery-overlay">Member Review</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/9HXM3y2v/Whats-App-Image-2026-03-05-at-1-11-29-PM.jpg" class="feedback-img" alt="Feedback 6">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/jPVNcCjN/Whats-App-Image-2026-03-05-at-1-11-30-PM.jpg" alt="Success Story 7" loading="lazy">
-                <div class="gallery-overlay">Transformation</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/jPVNcCjN/Whats-App-Image-2026-03-05-at-1-11-30-PM.jpg" class="feedback-img" alt="Feedback 7">
             </div>
-            <div class="gallery-item shine-effect">
-                <img src="https://i.ibb.co/qLHvcQ10/Whats-App-Image-2026-03-05-at-1-11-30-PM-1.jpg" alt="Success Story 8" loading="lazy">
-                <div class="gallery-overlay">Achievement</div>
+            <div class="col-md-3 col-6">
+                <img src="https://i.ibb.co/qLHvcQ10/Whats-App-Image-2026-03-05-at-1-11-30-PM-1.jpg" class="feedback-img" alt="Feedback 8">
             </div>
         </div>
     </div>
 </section>
 
 <!-- ===== STEPS ===== -->
-<section class="py-5" style="background: linear-gradient(135deg, #FFF5F7, var(--lightest));">
+<section class="py-5" style="background: var(--lightest);">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">What Happens When You Join?</h2>
         <div class="row g-3">
@@ -336,38 +316,38 @@
     </div>
 </section>
 
-<!-- ===== STATS ===== -->
+<!-- ===== STATS (PURE WHITE) ===== -->
 <section class="py-5" style="background: linear-gradient(135deg,var(--lightest),var(--white));">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">Know Your Coach</h2>
         <div class="row g-3 align-items-center">
             <div class="col-md-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm" style="background: var(--white); border-left: 4px solid var(--accent);">
-                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--primary),var(--accent));">⭐</div>
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm">
+                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--primary),var(--light));">⭐</div>
                     <div>
                         <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="5" data-suffix="+">0</span></h3>
-                        <p class="mb-0">Years of Experience</p>
+                        <p>Years of Experience</p>
                     </div>
                 </div>
-                <div class="d-flex align-items-center gap-3 p-3 rounded-2 shadow-sm" style="background: var(--white); border-left: 4px solid var(--light);">
-                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--light),var(--primary));">👥</div>
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 shadow-sm">
+                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--light),var(--darkest));">👥</div>
                     <div>
                         <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="1000" data-suffix="+">0</span></h3>
-                        <p class="mb-0">Women Reached</p>
+                        <p>Women Reached</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <div class="p-4 rounded-3 shadow-lg glow-pulse" style="background: var(--white); border: 2px solid var(--accent);">
+                <div class="stats-white p-4 rounded-3 shadow-lg glow-pulse">
                     <h3 class="fw-bold fs-3 mb-2" style="color:var(--primary);">🔥 Now it's YOUR time</h3>
                     <div class="row text-center">
                         <div class="col-6">
                             <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);">₹<span class="counter" data-target="1600000">0</span></h4>
-                            <p class="text-muted small">Earned by Women</p>
+                            <p class="text-muted">Earned by Women</p>
                         </div>
                         <div class="col-6">
                             <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);"><span class="counter" data-target="300" data-suffix="+">0</span></h4>
-                            <p class="text-muted small">Earning ₹50K–₹1L</p>
+                            <p class="text-muted">Earning ₹50K–₹1L</p>
                         </div>
                     </div>
                 </div>
@@ -383,14 +363,14 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What kind of work will I be doing?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is this program legitimate & safe?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Genuine training. 2000+ women earning consistently. Verify credentials.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How much time daily?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Just 1-2 hours daily. Flexible for everyone.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">When will I start earning?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Within 1 month. Sustainable income in 1-2 months.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Any prior experience needed?</button></h2><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No experience needed! Step-by-step guidance provided.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">What support after joining?</button></h2><div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Daily mentorship, 24/7 WhatsApp, weekly calls & women-only community.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">Any investment required?</button></h2><div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Nominal fee covers everything. No hidden costs.</div></div></div>
-                    <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">Can I do this alongside job/studies?</button></h2><div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes! Designed for busy women. Learn in free time.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What kind of work will I be doing?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is this program legitimate & safe?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Genuine training. 2000+ women earning consistently. Verify credentials.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How much time daily?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Just 1-2 hours daily. Flexible for everyone.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">When will I start earning?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Within 1 month. Sustainable income in 1-2 months.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Any prior experience needed?</button></h2><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No experience needed! Step-by-step guidance provided.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">What support after joining?</button></h2><div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Daily mentorship, 24/7 WhatsApp, weekly calls & women-only community.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">Any investment required?</button></h2><div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Nominal fee covers everything. No hidden costs.</div></div></div>
+                    <div class="accordion-item glow-border"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">Can I do this alongside job/studies?</button></h2><div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes! Designed for busy women. Learn in free time.</div></div></div>
                 </div>
             </div>
         </div>
@@ -398,27 +378,25 @@
 </section>
 
 <!-- ===== FINAL CTA ===== -->
-<section class="py-5 text-white" style="background: linear-gradient(135deg,var(--primary),var(--darkest));">
+<section class="py-5 text-white" style="background: linear-gradient(135deg,var(--primary),var(--light));">
     <div class="container text-center">
         <h2 class="display-4 fw-bold mb-3">Ready to Transform Your Life?</h2>
         <p class="fs-5 mb-4">Join thousands of women on their journey to financial independence</p>
         <div class="card border-0 p-4 p-md-5 mb-4" style="background:var(--white);color:var(--darkest);">
-            <h3 class="h4 fw-bold mb-3" style="color:var(--accent);">📲 How to Start?</h3>
+            <h3 class="h4 fw-bold mb-3" style="color:var(--primary);">📲 How to Start?</h3>
             <p class="fs-5 mb-3">Simply message me on WhatsApp:</p>
             <div class="row g-2 mb-3">
-                <div class="col-md-4"><div class="p-3 rounded" style="background:var(--lightest); border-left: 3px solid var(--accent);"><strong>📝 Name:</strong> Full Name</div></div>
-                <div class="col-md-4"><div class="p-3 rounded" style="background:var(--lightest); border-left: 3px solid var(--accent);"><strong>🎂 Age:</strong> Your Age</div></div>
-                <div class="col-md-4"><div class="p-3 rounded" style="background:var(--lightest); border-left: 3px solid var(--accent);"><strong>💼 Profession:</strong> Current Status</div></div>
+                <div class="col-md-4"><div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);"><strong>📝 Name:</strong> Full Name</div></div>
+                <div class="col-md-4"><div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);"><strong>🎂 Age:</strong> Your Age</div></div>
+                <div class="col-md-4"><div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);"><strong>💼 Profession:</strong> Current Status</div></div>
             </div>
-            <p class="fs-6 fw-semibold mb-3" style="color:var(--accent);">📌 Save My Number: 7204652469</p>
-            <button class="open-any glow-pulse" style="background:var(--white);color:var(--accent);border:2px solid var(--accent);">📲 Message on WhatsApp Now</button>
+            <p class="fs-6 fw-semibold mb-3" style="color:var(--primary);">📌 Save My Number: +91 7204652469</p>
+            <a href="https://wa.me/917204652469" target="_blank" class="open-any glow-pulse" style="text-decoration:none;">📲 Message on WhatsApp Now</a>
             <div class="text-center mt-4">
-                <a href="https://www.instagram.com/faizeenejaz?igsh=OWptZHB2OW1ydWdi" target="_blank" class="btn btn-outline-dark btn-lg d-inline-flex align-items-center gap-2">
-                    <i data-lucide="instagram" width="24"></i>Follow on Instagram
-                </a>
+                <a href="https://www.instagram.com/faizeenejaz?igsh=OWptZHB2OW1ydWdi" target="_blank" class="btn btn-outline-dark btn-lg d-inline-flex align-items-center gap-2"><i data-lucide="instagram" width="24"></i>Follow on Instagram</a>
             </div>
         </div>
-        <div class="card border-0 p-3 mb-3" style="background:rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,0.3);">
+        <div class="card border-0 p-3 mb-3 glow-border" style="background:rgba(255,255,255,.15);">
             <h4 class="h5 fw-bold mb-2">⏳ Within 24 hours:</h4>
             <div class="row text-white">
                 <div class="col-md-6"><div class="d-flex align-items-center gap-2 justify-content-center">📋 Complete Details</div></div>
@@ -438,30 +416,37 @@
         <div class="card-body p-4 position-relative">
             <button id="closeFormBtn" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close"></button>
             <div class="text-center mb-4">
-                <h2 class="h4 fw-bold mb-1" style="color:var(--accent);">🚀 Start Your Journey</h2>
+                <h2 class="h4 fw-bold mb-1" style="color:var(--primary);">🚀 Start Your Journey</h2>
                 <p class="text-muted small">Fill details to get started</p>
             </div>
             <form id="mainForm" novalidate>
                 <input type="hidden" id="sourceInfo" name="sourceInfo">
                 <div class="row g-2">
+                    <!-- NAME -->
                     <div class="col-12">
                         <label class="form-label d-flex align-items-center gap-2">
                             <i data-lucide="user" style="width:16px;"></i> Full Name *
                         </label>
                         <input id="inp_name" type="text" class="form-control" required value="">
                     </div>
+
+                    <!-- PHONE -->
                     <div class="col-12">
                         <label class="form-label d-flex align-items-center gap-2">
                             <i data-lucide="phone" style="width:16px;"></i> Phone *
                         </label>
                         <input id="inp_phone" type="tel" class="form-control" required maxlength="10" value="">
                     </div>
+
+                    <!-- AGE -->
                     <div class="col-6">
                         <label class="form-label d-flex align-items-center gap-2">
                             <i data-lucide="calendar" style="width:16px;"></i> Age *
                         </label>
                         <input id="inp_age" type="number" class="form-control" required min="15" max="65" value="">
                     </div>
+
+                    <!-- GENDER -->
                     <div class="col-6">
                         <label class="form-label d-flex align-items-center gap-2">
                             <i data-lucide="users" style="width:16px;"></i> Gender *
@@ -472,6 +457,8 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
+
+                    <!-- PROFESSION -->
                     <div class="col-12">
                         <label class="form-label d-flex align-items-center gap-2">
                             <i data-lucide="briefcase" style="width:16px;"></i> Profession *
@@ -483,6 +470,7 @@
                             <option>Other</option>
                         </select>
                     </div>
+
                     <div class="col-12">
                         <button type="submit" class="open-any w-100">📲 Send to WhatsApp</button>
                     </div>
@@ -527,7 +515,7 @@
     const privacyModal=document.getElementById('privacyModal');
     const privacyBtn=document.getElementById('privacyBtn');
     const closePrivacyBtn=document.getElementById('closePrivacyBtn');
-    const SCRIPT_URL="https://script.google.com/macros/s/AKfycbyV3dXBxImap3-djYETfKEi5POgAWYkyWXCcX1vNzis7_bI3rjklv5kzRx75dfhAMRj/exec";
+    const SCRIPT_URL="https://script.google.com/macros/s/AKfycbypZAebzyy3mWXxj1P7J6eMgDxRbWSZi3YMZaRl7WTo5jA-3Yws6sQ-XnI9b601hdBT/exec";
     const WA_NUMBER_INT="917204652469";
 
     function openForm(source='site'){
@@ -570,7 +558,7 @@
         formData.append('name',name);formData.append('phone',phone);formData.append('age',age);formData.append('gender',gender);formData.append('profession',profession);formData.append('source',sourceInfo.value);formData.append('timestamp',new Date().toISOString());
         fetch(SCRIPT_URL,{method:'POST',body:formData,mode:'no-cors'}).catch(()=>{});
         const msg=encodeURIComponent(`Hello Ma'am,\n\nI am interested in your women-only program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`);
-        if(typeof fbq!=='undefined'){fbq('track','Contact');}
+        if(typeof fbq!=='undefined'){fbq('track','Contact');fbq('track','Lead',{content_name:'WhatsApp Form',content_source:sourceInfo.value});}
         window.open(`https://wa.me/${WA_NUMBER_INT}?text=${msg}`,'_blank');
         closeForm();
     });
