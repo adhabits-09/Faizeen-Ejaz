@@ -20,16 +20,16 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-    <!-- Meta Pixel -->
+    <!-- Meta Pixel - NEW ID -->
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
         n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
         t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
         (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init','671318732739852'); fbq('track','PageView');
+        fbq('init','1479950423168349'); fbq('track','PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=671318732739852&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1479950423168349&ev=PageView&noscript=1"/></noscript>
 
     <style>
         :root {
@@ -44,6 +44,11 @@
             --glow-intense: 0 0 40px rgba(147,177,181,.7);
             --wa-green: #25D366;
             --wa-dark:  #128C7E;
+            /* New Feedback Colors - Warm Coral/Peach */
+            --feedback-bg: #FFF5F0;
+            --feedback-primary: #E07A5F;
+            --feedback-light: #F4A261;
+            --feedback-dark: #BC6C25;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -106,6 +111,30 @@
         .reel-card{flex:0 0 320px;height:570px;border-radius:15px;overflow:hidden;box-shadow:var(--shadow);background:#000;}
         .reel-player{width:100%;height:100%;border:0;border-radius:15px;}
         
+        /* Feedback Section New Colors */
+        .feedback-section {
+            background: linear-gradient(135deg, var(--feedback-bg), #FFE8D6);
+        }
+        .feedback-section h2 {
+            color: var(--feedback-dark) !important;
+        }
+        .feedback-section .text-muted {
+            color: var(--feedback-primary) !important;
+        }
+        .feedback-card {
+            border: 3px solid var(--feedback-light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(224, 122, 95, 0.2);
+            transition: all 0.3s;
+            background: var(--white);
+        }
+        .feedback-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(224, 122, 95, 0.3);
+            border-color: var(--feedback-primary);
+        }
+        
         .step-card{background: var(--white); border-radius:15px;padding:1.5rem;box-shadow:var(--shadow);transition:all .4s;height:100%;}
         .step-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);}
         .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--light));color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.3rem;flex-shrink:0;}
@@ -131,10 +160,12 @@
             border-radius: 15px;
             box-shadow: var(--shadow);
             transition: all .3s;
+            border: 3px solid var(--feedback-light);
         }
         .feedback-img:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 10px 30px rgba(224, 122, 95, 0.3);
+            border-color: var(--feedback-primary);
         }
 
         @media(max-width:768px){
@@ -217,17 +248,28 @@
     </div>
 </section>
 
-<!-- ===== FEEDBACK VIDEOS SECTION ===== -->
-<section class="py-5" style="background: var(--white);">
+<!-- ===== FEEDBACK VIDEOS SECTION - NEW COLOR & SIDE BY SIDE VIDEOS ===== -->
+<section class="py-5 feedback-section">
     <div class="container">
-        <h2 class="text-center display-5 fw-bold mb-3" style="color:var(--primary);">✨ Real Success Stories</h2>
-        <p class="text-center text-muted mb-4">100% real feedback from women in our community</p>
+        <h2 class="text-center display-5 fw-bold mb-3">✨ Real Success Stories</h2>
+        <p class="text-center mb-4" style="color: var(--feedback-primary); font-weight: 600;">100% real feedback from women in our community</p>
         
-        <!-- First Video (YouTube Short) -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-6 col-md-8">
-                <div class="reel-card shine-effect mx-auto" style="height: 500px;">
-                    <iframe class="reel-player" src="https://www.youtube.com/embed/ndNjiaYjrIc?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" allowfullscreen></iframe>
+        <!-- Both Videos Side by Side -->
+        <div class="row g-4 justify-content-center mb-5">
+            <!-- First Video -->
+            <div class="col-lg-5 col-md-6">
+                <div class="feedback-card">
+                    <div class="reel-card" style="width: 100%; height: 500px; flex: none;">
+                        <iframe class="reel-player" src="https://www.youtube.com/embed/Ixy58bECee0?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Video -->
+            <div class="col-lg-5 col-md-6">
+                <div class="feedback-card">
+                    <div class="reel-card" style="width: 100%; height: 500px; flex: none;">
+                        <iframe class="reel-player" src="https://www.youtube.com/embed/ndNjiaYjrIc?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
