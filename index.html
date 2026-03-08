@@ -8,7 +8,7 @@
     <!-- SEO -->
     <meta name="description" content="Join 10K+ women learning in-demand skills and earning ₹50K-₹1L monthly. Start today!">
     <meta property="og:image" content="https://i.ibb.co/Jw5CmkBW/Whats-App-Image-2026-03-04-at-2-40-28-PM.jpg">
-    <meta name="theme-color" content="#4F7C82">
+    <meta name="theme-color" content="#8B5CF6">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,22 +33,23 @@
 
     <style>
         :root {
-            --lightest: #B8E3E9;
-            --light:    #93B1B5;
-            --primary:  #4F7C82;
-            --darkest:  #0B2E33;
-            --white:    #FFFFFF;
-            --shadow: 0 6px 20px rgba(79,124,130,.15);
-            --shadow-hover: 0 10px 30px rgba(79,124,130,.25);
-            --glow: 0 0 25px rgba(147,177,181,.5);
-            --glow-intense: 0 0 40px rgba(147,177,181,.7);
+            /* Full Purple Theme */
+            --lightest: #F3E8FF;
+            --light: #C4B5FD;
+            --primary: #8B5CF6;
+            --darkest: #581C87;
+            --white: #FFFFFF;
+            --shadow: 0 6px 20px rgba(139, 92, 246, .15);
+            --shadow-hover: 0 10px 30px rgba(139, 92, 246, .25);
+            --glow: 0 0 25px rgba(196, 181, 253, .5);
+            --glow-intense: 0 0 40px rgba(196, 181, 253, .7);
             --wa-green: #25D366;
-            --wa-dark:  #128C7E;
-            /* New Feedback Colors - Warm Coral/Peach */
-            --feedback-bg: #FFF5F0;
-            --feedback-primary: #E07A5F;
-            --feedback-light: #F4A261;
-            --feedback-dark: #BC6C25;
+            --wa-dark: #128C7E;
+            /* Feedback Colors - Purple/Pink */
+            --feedback-bg: #FAF5FF;
+            --feedback-primary: #A855F7;
+            --feedback-light: #C4B5FD;
+            --feedback-dark: #7C3AED;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -63,11 +64,11 @@
         .glow-pulse { animation: pulseGlow 2.5s infinite; }
 
         @keyframes pulseGlow {
-            0%,100%{box-shadow:0 0 20px rgba(79,124,130,.4);}
-            50%{box-shadow:0 0 40px rgba(79,124,130,.8);}
+            0%,100%{box-shadow:0 0 20px rgba(139, 92, 246, .4);}
+            50%{box-shadow:0 0 40px rgba(139, 92, 246, .8);}
         }
 
-        /* Winter Chill WhatsApp Buttons */
+        /* WhatsApp Buttons */
         .open-any{
             background:linear-gradient(135deg,var(--wa-green),var(--wa-dark)) !important;
             color:var(--white) !important;
@@ -111,9 +112,9 @@
         .reel-card{flex:0 0 320px;height:570px;border-radius:15px;overflow:hidden;box-shadow:var(--shadow);background:#000;}
         .reel-player{width:100%;height:100%;border:0;border-radius:15px;}
         
-        /* Feedback Section New Colors */
+        /* Feedback Section Purple Colors */
         .feedback-section {
-            background: linear-gradient(135deg, var(--feedback-bg), #FFE8D6);
+            background: linear-gradient(135deg, var(--feedback-bg), #E9D5FF);
         }
         .feedback-section h2 {
             color: var(--feedback-dark) !important;
@@ -125,13 +126,13 @@
             border: 3px solid var(--feedback-light);
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(224, 122, 95, 0.2);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
             transition: all 0.3s;
             background: var(--white);
         }
         .feedback-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(224, 122, 95, 0.3);
+            box-shadow: 0 15px 40px rgba(168, 85, 247, 0.3);
             border-color: var(--feedback-primary);
         }
         
@@ -144,13 +145,13 @@
         .accordion-button:not(.collapsed){background:linear-gradient(135deg,var(--lightest),var(--white));color:var(--primary);}
         .accordion-body{color:var(--darkest);}
 
-        .form-backdrop,.privacy-modal{position:fixed;inset:0;background:rgba(11,46,51,.8);backdrop-filter:blur(8px);z-index:9999;opacity:0;visibility:hidden;transition:all .4s;}
+        .form-backdrop,.privacy-modal{position:fixed;inset:0;background:rgba(88,28,135,.8);backdrop-filter:blur(8px);z-index:9999;opacity:0;visibility:hidden;transition:all .4s;}
         .form-backdrop.show,.privacy-modal.show{opacity:1;visibility:visible;}
-        #formContainer,#privacyContent{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);z-index:10000;max-width:500px;width:90%;max-height:85vh;opacity:0;visibility:hidden;transition:all .4s;background:var(--white);border:1px solid var(--primary);border-radius:15px;box-shadow:0 0 40px rgba(79,124,130,.3);}
+        #formContainer,#privacyContent{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);z-index:10000;max-width:500px;width:90%;max-height:85vh;opacity:0;visibility:hidden;transition:all .4s;background:var(--white);border:1px solid var(--primary);border-radius:15px;box-shadow:0 0 40px rgba(139,92,246,.3);}
         #formContainer.show,#privacyContent.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1);}
-        .form-card{box-shadow:0 0 40px rgba(79,124,130,.3);border:1px solid var(--primary);}
+        .form-card{box-shadow:0 0 40px rgba(139,92,246,.3);border:1px solid var(--primary);}
         .form-control,.form-select{background: var(--lightest); border:2px solid var(--light);color:var(--darkest);border-radius:8px;padding:.6rem .9rem;transition:all .3s;}
-        .form-control:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(79,124,130,.15);}
+        .form-control:focus,.form-select:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(139,92,246,.15);}
 
         /* Feedback Gallery */
         .feedback-img {
@@ -164,7 +165,7 @@
         }
         .feedback-img:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(224, 122, 95, 0.3);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
             border-color: var(--feedback-primary);
         }
 
@@ -248,7 +249,7 @@
     </div>
 </section>
 
-<!-- ===== FEEDBACK VIDEOS SECTION - NEW COLOR & SIDE BY SIDE VIDEOS ===== -->
+<!-- ===== FEEDBACK VIDEOS SECTION - PURPLE COLOR & SIDE BY SIDE VIDEOS ===== -->
 <section class="py-5 feedback-section">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-3">✨ Real Success Stories</h2>
@@ -600,7 +601,8 @@
         formData.append('name',name);formData.append('phone',phone);formData.append('age',age);formData.append('gender',gender);formData.append('profession',profession);formData.append('source',sourceInfo.value);formData.append('timestamp',new Date().toISOString());
         fetch(SCRIPT_URL,{method:'POST',body:formData,mode:'no-cors'}).catch(()=>{});
         const msg=encodeURIComponent(`Hello Ma'am,\n\nI am interested in your women-only program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`);
-        if(typeof fbq!=='undefined'){fbq('track','Contact');fbq('track','Lead',{content_name:'WhatsApp Form',content_source:sourceInfo.value});}
+        // ONLY CONTACT EVENT - REMOVED LEAD EVENT FOR LOWER COST
+        if(typeof fbq!=='undefined'){fbq('track','Contact');}
         window.open(`https://wa.me/${WA_NUMBER_INT}?text=${msg}`,'_blank');
         closeForm();
     });
